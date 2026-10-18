@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alviandi | Personal Profile</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0e0b;
+      color: #f4f7f1;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #293029;
+    }
+
+    .logo {
+      color: #b7ff36;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #b7ff36;
+    }
+
+    main {
+      width: 84%;
+      max-width: 900px;
+      margin: 60px auto;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      margin-bottom: 40px;
+    }
+
+    /* FOTO PROFIL */
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #b7ff36;
+      flex-shrink: 0;
+      background: #151a15;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .green {
+      color: #b7ff36;
+    }
+
+    h1 {
+      font-size: clamp(28px, 5vw, 45px);
+      line-height: 1.2;
+      margin: 8px 0;
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      font-size: 21px;
+    }
+
+    section {
+      background: #151a15;
+      border: 1px solid #293029;
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 18px;
+      scroll-margin-top: 20px;
+    }
+
+    section p {
+      color: #b8c1b5;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tags span {
+      border: 1px solid #46513d;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+    }
+
+    .activity {
+      margin-bottom: 10px;
+    }
+
+    .activity:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #8f998b;
+      border-top: 1px solid #293029;
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 5px;
+      }
+
+      main {
+        width: 90%;
+        margin: 35px auto;
+      }
+
+      .hero {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGASI -->
+  <header>
+    <div class="logo">ALVIANDI</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#organization">Activities</a>
+      <a href="#music">Music</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PROFIL UTAMA -->
+    <div class="hero">
+
+      <div class="avatar">
+        <img src="foto.jpeg" alt="Foto Alviandi">
+      </div>
+
+      <div>
+        <p class="green">PERSONAL PROFILE</p>
+
+        <h1>
+          Alviandi Muhammad<br>
+          Ilham Fekanadi
+        </h1>
+
+        <p>Logistics Engineering Student · UPI</p>
+      </div>
+
+    </div>
+
+    <!-- TENTANG SAYA -->
+    <section id="about">
+      <h2>About Me</h2>
+
+      <p>
+        Saya mahasiswa Teknik Logistik di Universitas Pendidikan
+        Indonesia yang tertarik pada bidang logistics, operations,
+        dan supply chain. Saya senang bekerja dalam tim, mengembangkan
+        kemampuan komunikasi, serta mendapatkan pengalaman melalui
+        organisasi dan kepanitiaan.
+      </p>
+    </section>
+
+    <!-- KEMAMPUAN -->
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <div class="tags">
+        <span>Teamwork</span>
+        <span>Leadership</span>
+        <span>Communication</span>
+        <span>Adaptability</span>
+        <span>Excel</span>
+        <span>Word</span>
+        <span>Canva</span>
+      </div>
+    </section>
+
+    <!-- ORGANISASI -->
+    <section id="organization">
+      <h2>Organization & Activities</h2>
+
+      <div class="activity">
+        <p class="green">Staff Pengembangan Sumber Daya Organisasi</p>
+        <p>BEM Himpunan Mahasiswa Teknik Logistik</p>
+      </div>
+
+      <div class="activity">
+        <p class="green">Ketua Divisi Koordinator Lapangan</p>
+        <p>Kaderisasi HMTL</p>
+      </div>
+
+      <div class="activity">
+        <p class="green">Ketua Divisi Acara</p>
+        <p>Studi Banding HMTL</p>
+      </div>
+
+      <div class="activity">
+        <p class="green">Staff Divisi Acara</p>
+        <p>HMTL Mengabdi, Logistic National Competition,
+        dan HMTL Cup</p>
+      </div>
+    </section>
+
+    <!-- MUSIK FAVORIT -->
+    <section id="music">
+      <h2>Favorite Music</h2>
+
+      <p class="green">♪ Adam</p>
+      <p>Pamungkas</p>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="contact">
+      <h2>Contact</h2>
+
+      <p>
+        +6288219984434
+      </p>
+
+      <!-- Tambahkan email atau media sosial jika diperlukan -->
+    </section>
+        
+  </main>
+
+  <footer>
+    © 2026 Alviandi · Personal Profile
+  </footer>
+
+</body>
+</html>
